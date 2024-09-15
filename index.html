@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFCAR</title>
+    <link rel="icon" href="./assets/ifpb.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        .custom-gradient {
+            background: linear-gradient(to right, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 100%);
+        }
+
+                
+    </style>
+</head>
+<body>
+    <header class="relative">
+        
+        <nav class="absolute z-10 w-screen border-b-2 pt-4">
+            <div class="flex items-center justify-between min-w-full px-12 text-white">
+                <div>
+                    <ul class="flex">
+                        <li class="cursor-pointer mx-5 text-lg font-semibold border-b-4 pb-3 border-transparent hover:border-red-600 transition-colors duration-300">Home</li>
+                        <li class="cursor-pointer mx-5 text-lg font-semibold border-b-4 pb-3 border-transparent hover:border-red-600 transition-colors duration-300">Modelos</li>
+                        <li class="cursor-pointer mx-5 text-lg font-semibold border-b-4 pb-3 border-transparent hover:border-red-600 transition-colors duration-300">Contato</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="flex">
+                        <li class="mx-2 text-3xl border-b-4 border-transparent hover:border-red-600 transition-colors duration-300"><a href=""><span class="material-icons">account_circle</span></a></li>
+                        <li class="mx-2 text-3xl  border-b-4 border-transparent hover:border-red-600 transition-colors duration-300"><a href=""><span class="material-icons">shopping_cart</span></a></li>
+                        <li class="mx-2 text-3xl  border-b-4 border-transparent hover:border-red-600 transition-colors duration-300"><a href=""><span class="material-icons">search</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="relative w-full max-w-full">
+            <img src="../Step-2/assets/porsche-bg.png" class="block w-full h-auto">
+            <div class="absolute top-0 left-0 flex w-full h-full items-center content-center text-white custom-gradient">
+                
+                <div class="flex flex-col px-16">
+
+                    <h1 class="text-4xl font-bold">IFCAR</h1>
+                    <span class="text-2xl font-semibold">Sua Porsche só aqui</span>
+                    <button class="p-4 font-semibold mt-2 rounded border-2 border-white transition-shadow duration-300 ease-in-out shadow-none hover:shadow-[0_0_0_2px_white]">Ver Modelos</button>
+
+                </div>
+
+            </div>
+        </div>   
+    </header>
+</body>
+</html>
