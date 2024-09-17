@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="overflow-x-hidden">
+<html lang="pt-br" class="overflow-x-hidden scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,10 +29,15 @@
 <body>
     <header class="w-screen">
         
-        <nav class="absolute z-10 border-b-2 pt-4 w-full">
+        <nav class="absolute z-10 border-b-2 pt-1 sm:pt-4 w-full backdrop-blur">
             <div class="flex items-center justify-between px-12 text-white w-full">
+
+                <div class="sm:hidden">
+                    <a href=""><span class="material-icons text-3xl focus:outline">menu</span></a>
+                </div>
+
                 <div>
-                    <ul class="flex">
+                    <ul class="hidden sm:flex">
                         <li class="cursor-pointer mx-5 text-lg font-semibold border-b-4 pb-3 border-transparent hover:border-red-600 transition-colors duration-300">Home</li>
                         <li class="cursor-pointer mx-5 text-lg font-semibold border-b-4 pb-3 border-transparent hover:border-red-600 transition-colors duration-300">Modelos</li>
                         <li class="cursor-pointer mx-5 text-lg font-semibold border-b-4 pb-3 border-transparent hover:border-red-600 transition-colors duration-300">Contato</li>
@@ -52,14 +57,13 @@
             <img src="./assets/porsche-bg.png" class="block w-full h-auto">
             <div class="absolute top-0 left-0 flex w-full h-full items-center content-center text-white custom-gradient">
                 
-                <div class="flex flex-col px-16">
+                <div class="flex flex-col px-4 sm:px-16">
 
-                    <h1 class="text-4xl font-bold">IFCAR</h1>
-                    <span class="text-2xl font-semibold">Sua Porsche só aqui</span>
-                    <button class="p-4 font-semibold mt-2 rounded bg-red-600 transition-shadow duration-300 ease-in-out shadow-none hover:shadow-[0_0_0_2px_#dc2626]">Ver Modelos</button>
+                    <h1 class="text-x sm:text-4xl font-bold">IFCAR</h1>
+                    <span class="text-sm sm:text-2xl font-semibold">Sua Porsche só aqui</span>
+                    <button class="p-1 sm:p-4 font-semibold mt-2 rounded bg-red-600 transition-shadow duration-300 ease-in-out shadow-none hover:shadow-[0_0_0_2px_#dc2626]">Ver Modelos</button>
 
                 </div>
-
             </div>
         </div>   
     </header>
@@ -73,7 +77,7 @@
                     <span class="text-2xl">ENCONTRE A SUA PORSCHE</span>
                 </div>
 
-                <div class="flex gap-x-36 text-center">
+                <div class="flex flex-col md:flex-row gap-x-36 text-center">
 
                     <div class="flex flex-col p-4">
                         <span class="material-icons text-5xl mb-3">directions_car</span>
@@ -95,6 +99,61 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modelos -->
+        <div class="mt-16 w-screen relative mb-20">
+
+            <div class="relative w-full max-w-full">
+                <img src="./assets/gt3-banner.jpg" class="block w-full h-auto" alt="">
+            
+                <div class="absolute top-0 left-0 flex items-center content-center w-full h-full custom-gradient">
+                    
+                    <div class="flex flex-col px-8 sm:px-16 text-white">
+                        <span class="text-x sm:text-4xl font-bold">Porsche 911</span>
+                        <span class="text-sm sm:text-2xl font-semibold">Desempenho incomparável</span>
+                        <button class="p-1 sm:p-4 font-semibold mt-2 rounded bg-red-600 transition-shadow duration-300 ease-in-out shadow-none hover:shadow-[0_0_0_2px_#dc2626]">Saiba mais</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="relative w-full max-w-full mt-16">
+                <img src="./assets/918-banner.jpg" class="block w-full h-auto" alt="">
+            
+                <div class="absolute top-0 left-0 flex items-center content-center w-full h-full custom-gradient">
+                    
+                    <div class="flex flex-col px-8 sm:px-16 text-white">
+                        <span class="text-x sm:text-4xl font-bold">Porsche 918</span>
+                        <span class="text-sm sm:text-2xl font-semibold">Superesportivo de dar inveja</span>
+                        <button class="p-1 sm:p-4 font-semibold mt-2 rounded bg-red-600 transition-shadow duration-300 ease-in-out shadow-none hover:shadow-[0_0_0_2px_#dc2626]">Saiba mais</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="relative w-full max-w-full mt-16">
+                <img src="./assets/eletric-banner.jpg" class="block w-full h-auto" alt="">
+            
+                <div class="absolute top-0 left-0 flex items-center content-center w-full h-full custom-gradient">
+                    
+                    <div class="flex flex-col px-8 sm:px-16 text-white">
+                        <span class="text-x sm:text-4xl font-bold">Eletricos</span>
+                        <span class="text-sm sm:text-2xl font-semibold">Os melhores eletricos</span>
+                        <button class="p-1 sm:p-4 font-semibold mt-2 rounded bg-red-600 transition-shadow duration-300 ease-in-out shadow-none hover:shadow-[0_0_0_2px_#dc2626]">Saiba mais</button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container flex flex-col items-center justify-center text-center px-12 mb-4">
+
+            <span class="font-bold text-2xl">Encontre seu Carro no <br> Ou <br> Seminovo</span>
+            <span class="mt-5">Ficou mais fácil encontrar o carro dos seus sonhos. <br> Digite sua localização e navegue pelas melhores ofertas de carros disponíveis perto de você.</span>
+            <input type="text" placeholder="Local" class="border w-2/3 rounded p-2">
+        </div>
+
 
     </main>
 </body>
